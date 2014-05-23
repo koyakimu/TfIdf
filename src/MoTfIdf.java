@@ -215,7 +215,7 @@ public class MoTfIdf{
             }
         }
 
-        idf = Math.log((numberOfAllDocument / df) + 1);
+        idf = Math.log(numberOfAllDocument / df) / Math.log(2.0);
 
         tfIdf = tf * idf;
 
